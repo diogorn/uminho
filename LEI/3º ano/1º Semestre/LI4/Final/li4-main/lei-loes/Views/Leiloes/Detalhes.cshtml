@@ -1,0 +1,50 @@
+@model lei_loes.Models.LeilaoModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Leilao</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataInicio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataInicio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataFim)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataFim)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrecoAtual)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrecoAtual)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ExclusividadeLeilao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ExclusividadeLeilao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TipoLeilao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TipoLeilao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-controller="Lances" asp-action="Lanca" asp-route-leilaoId="@Model.LeilaoID" class="btn btn-primary">Fazer Lance</a>
+</div>
+<div>
+    <a asp-action="Calendario">Back to List</a>
+</div>

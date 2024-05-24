@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "externalConsole": false,
+      "cwd": "/Users/diogoneto/Documents/Universidade/LCC/1º ano/2º Semestre/Laboratórios de algoritmia/projeto_la_final/projeto_la_final",
+      "program": "/Users/diogoneto/Documents/Universidade/LCC/1º ano/2º Semestre/Laboratórios de algoritmia/projeto_la_final/projeto_la_final/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb"
+    }
+  ]
+}

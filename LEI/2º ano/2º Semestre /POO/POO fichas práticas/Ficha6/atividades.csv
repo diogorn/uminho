@@ -1,0 +1,4 @@
+Corrida{Atividade{codigo='c1', descricao='Corrida na praia', data=2024-04-29, duracao=60}distancia=10.0, altimetria=100.0, percurso='Praia'}
+;
+Corrida{Atividade{codigo='c2', descricao='Corrida na cidade', data=2024-04-29, duracao=60}distancia=10.0, altimetria=100.0, percurso='Cidade'}
+;

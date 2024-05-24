@@ -1,0 +1,53 @@
+﻿@model IEnumerable<lei_loes.Models.CarroModel>
+
+@{
+    ViewData["Title"] = "Gestão Carro";
+}
+
+<h1>Gestão Carro</h1>
+
+<p>
+    <a asp-action="Create">Adicionar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecoInicial)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecoInicial)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CarroID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CarroID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CarroID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,97 @@
+@model List<lei_loes.Models.LeilaoModel>
+
+@{
+    ViewData["Title"] = "Calendário de Leilões";
+}
+
+<h2>Calendário de Leilões</h2>
+
+<div id="calendario" class="calendar-container"></div>
+
+<style>
+    .calendar-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .calendar-container table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .calendar-container th,
+    .calendar-container td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .calendar-container th {
+        background-color: #f4f4f4;
+    }
+    .calendar-container td {
+        height: 50px;
+    }
+    .leilao-event {
+        background-color: #ffcccb;
+        cursor: pointer;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        var leiloes = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(m => new {
+            dataInicio = m.DataInicio.ToString("yyyy-MM-dd"),
+            id = m.LeilaoID
+        })));
+
+        function criarCalendario(ano, mes) {
+            var diasNoMes = new Date(ano, mes + 1, 0).getDate();
+            var primeiroDia = new Date(ano, mes, 1).getDay();
+
+            var calendarioHtml = '<table>';
+            calendarioHtml += '<tr><th>Domingo</th><th>Segunda</th><th>Terça</th><th>Quarta</th><th>Quinta</th><th>Sexta</th><th>Sábado</th></tr><tr>';
+
+            // Preencher os dias vazios
+            for (var i = 0; i < primeiroDia; i++) {
+                calendarioHtml += '<td></td>';
+            }
+
+            // Preencher os dias do mês com leilões
+            for (var dia = 1; dia <= diasNoMes; dia++) {
+                var dataCompleta = new Date(ano, mes, dia).toISOString().split('T')[0]; // Formato AAAA-MM-DD
+                var leilaoDoDia = leiloes.find(leilao => leilao.dataInicio === dataCompleta);
+                var classeLeilao = leilaoDoDia ? 'leilao-event' : '';
+                var idLeilao = leilaoDoDia ? ` data-id="${leilaoDoDia.id}"` : '';
+
+                calendarioHtml += `<td class="${classeLeilao}"${idLeilao}>${dia}</td>`;
+
+                if ((dia + primeiroDia - 1) % 7 === 6) { // Quando for Sábado, fechar a linha
+                    calendarioHtml += '</tr><tr>';
+                }
+            }
+
+            var ultimoDia = (primeiroDia + diasNoMes - 1) % 7;
+            var diasRestantes = ultimoDia < 6 ? 6 - ultimoDia : 0;
+            for (var i = 0; i < diasRestantes; i++) {
+                calendarioHtml += '<td></td>';
+            }
+
+            calendarioHtml += '</tr></table>';
+            document.getElementById('calendario').innerHTML = calendarioHtml;
+
+            var leiloesElementos = document.querySelectorAll('.leilao-event');
+            leiloesElementos.forEach(function(elemento) {
+                elemento.addEventListener('click', function() {
+                    var idLeilao = elemento.getAttribute('data-id');
+                    if(idLeilao) {
+                        window.location.href = '@Url.Action("Detalhes", "Leiloes")/' + idLeilao;
+                    }
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var hoje = new Date();
+            criarCalendario(hoje.getFullYear(), hoje.getMonth());
+        });
+    </script>
+}

@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 30px;
+  background-color: #347aa0b0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Use 100vh para fazer com que o container preencha a altura da tela */
+  background-color: #347aa0b0; /* Cor de fundo azul como na imagem */
+  color: #a00a0a; /* Cor laranja para o texto */
+  font-family: 'Oswald', sans-serif; /* Define a fonte para Oswald */
+}
+
+.header h1 {
+  margin-bottom: 50px; /* Espaçamento abaixo do título */
+}
+
+.buttons button {
+  background-color: #ffffff; /* Botões com fundo branco */
+  border: 1px solid #d3d3d3; /* Borda cinza claro para os botões */
+  border-radius: 5px; /* Bordas arredondadas para os botões */
+  color: #000000; /* Texto dos botões em preto */
+  font-size: 16px; /* Tamanho do texto */
+  margin: 10px; /* Espaçamento em volta dos botões */
+  padding: 10px 20px; /* Espaçamento interno dos botões */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave para mudanças de cor */
+  cursor: pointer; /* Cursor de clique */
+}
+
+.buttons button:hover {
+  background-color: #d3d3d3; /* Mudança de cor de fundo ao passar o mouse */
+  color: #ffffff; /* Mudança de cor do texto ao passar o mouse */
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+  background-color: #a00a0a; /* Cor de fundo */
+  height: 60px; /* Tamanho */
+  display: flex; /* Usa Flexbox para o layout dos itens da navbar */
+  justify-content: flex-end; /* Alinha os itens da navbar à direita */
+  /* Outras propriedades, como sombras, etc. */
+}
+
+
+/* Estilos para os itens da barra de navegação */
+.navbar .nav-item .nav-link {
+  color: #abcdef; /* Nova cor dos itens */
+  /* Outras propriedades, como tamanho da fonte, etc. */
+}
+
+/* Estilos para os itens da barra de navegação ao passar o mouse */
+.navbar .nav-item .nav-link:hover {
+  background-color: rgba(82, 50, 50, 0.477); /* Cor de fundo ao passar o mouse */
+  color: #a00a0a; /* Cor do texto ao passar o mouse */
+}
+
+.navbar {
+  background-color: #a00a0a !important;
+}
+
+.navbar-brand {
+  color: white !important; /* Usa !important para garantir que a cor seja aplicada sobre outras regras */
+}
+
+
+
+.navbar-brand img {
+  max-width: 150px; /* Define o tamanho máximo do logotipo */
+  margin-right: 1px; /* Adiciona uma margem à direita do logotipo */
+}

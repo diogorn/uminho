@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Gerir";
+}
+
+<style>
+    .button-groups h3 {
+        font-size: 24px; 
+        color: #1e1e1e; 
+        border-bottom: 1px solid #e5e5e5; 
+        padding-bottom: 10px;
+    }
+
+    .button-group a {
+        margin-right: 10px;
+    }
+</style>
+
+<h2>Gerir</h2>
+
+<div class="button-groups">
+    <a href="@Url.Action("Index", "Carros")" class="btn btn-primary">Carro</a>
+    <a href="@Url.Action("Index", "Leiloes")" class="btn btn-primary">Leilão</a>
+    <a href="@Url.Action("Index", "Lances")" class="btn btn-primary">Lance</a>
+    <a href="@Url.Action("ListUsers", "User")" class="btn btn-primary">User</a>
+</div>

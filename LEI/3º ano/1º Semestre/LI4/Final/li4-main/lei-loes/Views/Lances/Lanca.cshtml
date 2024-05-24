@@ -1,0 +1,46 @@
+@using lei_loes.Data
+@using Microsoft.AspNetCore.Identity
+@model lei_loes.Models.LanceModel
+@inject UserManager<User> UserManager
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+}
+
+<h4>Lance</h4>
+<hr />
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="lanca">
+            <div class="form-group">
+                <label asp-for="Valor" class="control-label"></label>
+                <input asp-for="Valor" class="form-control" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Cliente_ClienteID" type="hidden" />
+                <input asp-for="Leilao_LeilaoID" type="hidden" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<div>
+    <a asp-action="Detalhes" asp-controller="Leiloes" asp-route-id="@Model.Leilao_LeilaoID">Voltar a trás</a>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
