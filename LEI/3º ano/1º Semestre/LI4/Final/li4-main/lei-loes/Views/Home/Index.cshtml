@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="page-container">
+    <div class="header">
+        <h1>LEI - Lões</h1>
+    </div>
+    <div class="buttons">
+      <a href="@Url.Action("Calendario", "Leiloes")" class="btn btn-primary">Calendário</a>
+     @if (ViewBag.Admin ?? false)
+    {
+        <a href="@Url.Action("Index", "Gerir")" class="btn btn-primary">Gerir</a>
+    }
+
+
+    </div>
+</div>

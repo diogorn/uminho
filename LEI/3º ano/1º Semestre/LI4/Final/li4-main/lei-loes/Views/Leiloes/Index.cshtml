@@ -1,0 +1,54 @@
+﻿@model IEnumerable<lei_loes.Models.LeilaoModel>
+
+@{
+    ViewBag.Title = "GestãoLeilões";
+}
+
+<h2>@ViewBag.Title</h2>
+@if (Model.Any())
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID do Leilão</th>
+            <th>Data de Início</th>
+            <th>Data de Fim</th>
+            <th>Tipo de Leilão</th>
+            <th>Preço Inicial</th>
+            <th>Preço Atual</th>
+            <th>Preço Final</th>
+            <th>Exclusividade</th>
+            <th>ID do Carro</th>
+            <th>ID do Admin</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.LeilaoID)</td>
+            <td>@Html.DisplayFor(modelItem => item.DataInicio)</td>
+            <td>@Html.DisplayFor(modelItem => item.DataFim)</td>
+            <td>@Html.DisplayFor(modelItem => item.TipoLeilao)</td>
+            <td>@Html.DisplayFor(modelItem => item.PrecoInicial)</td>
+            <td>@Html.DisplayFor(modelItem => item.PrecoAtual)</td>
+            <td>@Html.DisplayFor(modelItem => item.PrecoFinal)</td>
+            <td>@Html.DisplayFor(modelItem => item.ExclusividadeLeilao)</td>
+            <td>@Html.DisplayFor(modelItem => item.Carro_CarroID)</td>
+            <td>@Html.DisplayFor(modelItem => item.Admin_AdminID)</td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id=item.LeilaoID }) |
+                @Html.ActionLink("Detalhes", "Details", new { id=item.LeilaoID }) |
+                @Html.ActionLink("Deletar", "Delete", new { id=item.LeilaoID })
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+}
+else
+{
+    <p>@ViewBag.Message</p>
+}
+<p>
+    @Html.ActionLink("Criar Novo Leilão", "Create")
+</p>

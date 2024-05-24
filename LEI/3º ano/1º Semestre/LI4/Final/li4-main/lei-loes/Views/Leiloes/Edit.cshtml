@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using lei_loes.Data
+@model lei_loes.Models.LeilaoModel
+@inject UserManager<User> UserManager
+@{
+    ViewData["Title"] = "Edit";
+}
+@{
+    var user = await UserManager.GetUserAsync(User);
+}
+
+<h1>Edit</h1>
+
+<h4>Leilao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="LeilaoID" />
+            <div class="form-group">
+                <label asp-for="DataInicio" class="control-label"></label>
+                <input asp-for="DataInicio" class="form-control" />
+                <span asp-validation-for="DataInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataFim" class="control-label"></label>
+                <input asp-for="DataFim" class="form-control" />
+                <span asp-validation-for="DataFim" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ExclusividadeLeilao" /> @Html.DisplayNameFor(model => model.ExclusividadeLeilao)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoLeilao" class="control-label"></label>
+                <input asp-for="TipoLeilao" class="form-control" />
+                <span asp-validation-for="TipoLeilao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Carro_CarroID" class="control-label"></label>
+                <select asp-for="Carro_CarroID" class="form-control" asp-items="ViewBag.Carro_CarroID"></select>
+                <span asp-validation-for="Carro_CarroID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Admin_AdminID" class="control-label"></label>
+                <input asp-for="Admin_AdminID" class="form-control" value=@user?.Id readonly />
+                <span asp-validation-for="Admin_AdminID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Delete" asp-route-id="@Model.LeilaoID" class="btn btn-danger">Delete</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Lista">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

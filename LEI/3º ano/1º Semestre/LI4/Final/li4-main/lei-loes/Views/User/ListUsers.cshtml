@@ -1,0 +1,29 @@
+﻿@model IEnumerable<lei_loes.Data.User>
+
+<h2>List of Users</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Id</th>
+            <th>Anonimo</th>
+            <th>Admin</th>
+            <th>Editar</th> 
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>@user.Id</td>
+                <td>@user.Anonimo</td>
+                <td>@user.Admin</td>
+                <td><a href="@Url.Action("Edit", "User", new { id = user.Id })" class="btn btn-primary">Editar</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
