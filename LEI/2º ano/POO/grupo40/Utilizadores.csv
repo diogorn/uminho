@@ -1,0 +1,18 @@
+Utilizador{id=74eeeaa9-f9ad-4569-b391-bf4d8ff42321, email='u7@mail.pt', password='u7', nome='António', genero=Masculino, altura=1.9, peso=85.0, dataNascimento=1965-02-28, frequanciaCardiacaMediaRepouso=68.0998, fatorMultiplicativoCalorias=0.8999999999999999}
+;
+Utilizador{id=7f7df368-a073-4aa7-b5ff-5ccc0c878b21, email='u2@mail.pt', password='u2', nome='Lúcia', genero=Feminino, altura=1.78, peso=66.0, dataNascimento=1984-08-15, frequanciaCardiacaMediaRepouso=58.727199999999996, fatorMultiplicativoCalorias=1.0}
+;
+Utilizador{id=79f7bc3f-08af-42e7-bf4e-43a978b20255, email='u5@mail.pt', password='u5', nome='Agostinho', genero=Masculino, altura=1.82, peso=80.0, dataNascimento=1996-07-01, frequanciaCardiacaMediaRepouso=81.94536, fatorMultiplicativoCalorias=0.5}
+;
+Utilizador{id=6bed7a1e-423f-43c9-9235-318f684aeb82, email='u9@mail.pt', password='u9', nome='José', genero=Masculino, altura=1.83, peso=87.0, dataNascimento=2002-03-31, frequanciaCardiacaMediaRepouso=75.36236, fatorMultiplicativoCalorias=0.8999999999999999}
+;
+Utilizador{id=88c90cec-4aca-4f78-b029-759e6e2e2f8e, email='u4@mail.pt', password='u4', nome='Catarina', genero=Feminino, altura=1.65, peso=65.0, dataNascimento=1983-12-10, frequanciaCardiacaMediaRepouso=70.5222, fatorMultiplicativoCalorias=0.4}
+;
+Utilizador{id=af2dad02-805d-496c-b5f4-95a823331a3c, email='u1@mail.pt', password='u1', nome='Tiago', genero=Masculino, altura=1.75, peso=70.0, dataNascimento=1998-02-05, frequanciaCardiacaMediaRepouso=68.21499999999999, fatorMultiplicativoCalorias=1.3000000000000003}
+;
+Utilizador{id=06866b4a-04f2-4099-8a2d-9de6ebaeb2dc, email='u3@mail.pt', password='u3', nome='Rúben', genero=Masculino, altura=1.8, peso=70.0, dataNascimento=1975-11-24, frequanciaCardiacaMediaRepouso=64.26699999999998, fatorMultiplicativoCalorias=1.3000000000000003}
+;
+Utilizador{id=7f3e8382-b418-4f5a-bc3e-7caf3c94e173, email='u6@mail.pt', password='u6', nome='Joana', genero=Feminino, altura=1.7, peso=58.0, dataNascimento=2007-01-05, frequanciaCardiacaMediaRepouso=74.9112, fatorMultiplicativoCalorias=0.30000000000000004}
+;
+Utilizador{id=c372d81c-8313-4759-b545-debe9f33f6bd, email='u8@mail.pt', password='u8', nome='Sofia', genero=Feminino, altura=1.55, peso=50.0, dataNascimento=2003-06-11, frequanciaCardiacaMediaRepouso=67.1916, fatorMultiplicativoCalorias=0.6}
+;

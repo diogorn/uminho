@@ -1,0 +1,30 @@
+CorridaTerreno{Atividade{id=c658704f-76ac-48f5-85e0-e320fb84b505, nome='CorridaMontanha', dataRealização=2024-08-01T10:00, duracaoMin=150, frequanciaCardiacaMedia=0.0}, Distancia=4000.0, Altimetria=100.0, Tipo de Terreno=MONTE, Calorias gastas=0.0, Frequencia Cardiaca Media=0.0}
+;
+CorridaTerreno{Atividade{id=af13d8b2-f892-4fab-b2e6-b51f12b8c970, nome='CorridaEstrada', dataRealização=2024-06-15T10:00, duracaoMin=120, frequanciaCardiacaMedia=0.0}, Distancia=3000.0, Altimetria=100.0, Tipo de Terreno=ESTRADA, Calorias gastas=0.0, Frequencia Cardiaca Media=0.0}
+;
+CorridaTerreno{Atividade{id=4dda11af-097b-410d-8c8a-fa0c65e02774, nome='CorridaPista', dataRealização=2024-06-01T10:00, duracaoMin=180, frequanciaCardiacaMedia=0.0}, Distancia=5000.0, Altimetria=50.0, Tipo de Terreno=PISTA, Calorias gastas=0.0, Frequencia Cardiaca Media=0.0}
+;
+Alongamentos{Atividade{id=0047fffd-2bb2-4f9b-9a21-71147c8f84dc, nome='Alongamento10', dataRealização=2024-08-01T10:00, duracaoMin=60, frequanciaCardiacaMedia=0.0}repeticoes=10, series=3, parteCorpo=SUPERIORES, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;
+Alongamentos{Atividade{id=6a1e8025-3d05-4fbf-8c25-294e3674e97a, nome='Alongamento11', dataRealização=2024-06-15T10:00, duracaoMin=30, frequanciaCardiacaMedia=0.0}repeticoes=10, series=3, parteCorpo=INFERIORES, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;
+Alongamentos{Atividade{id=ba40902c-41b5-47ab-86db-145f22b27587, nome='Alongamento12', dataRealização=2024-06-01T10:00, duracaoMin=20, frequanciaCardiacaMedia=0.0}repeticoes=10, series=3, parteCorpo=TRONCO, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;
+Btt{Atividade{id=1f3fe48f-949f-4bb9-99cf-f72976d087db, nome='Btt4', dataRealização=2024-06-01T10:00, duracaoMin=150, frequanciaCardiacaMedia=0.0}hard=true, dificuldade=4, distancia=4000.0, altimetria=500.0, tipoTerreno=MONTE}
+;
+Btt{Atividade{id=43f4fe9b-ff3a-441d-8ddc-00361d78455a, nome='Btt5', dataRealização=2024-06-15T10:00, duracaoMin=120, frequanciaCardiacaMedia=0.0}hard=true, dificuldade=3, distancia=3000.0, altimetria=400.0, tipoTerreno=MONTE}
+;
+Btt{Atividade{id=a2e3fc57-8392-41d8-9383-be19724835e6, nome='Btt6', dataRealização=2024-06-01T10:00, duracaoMin=180, frequanciaCardiacaMedia=0.0}hard=true, dificuldade=5, distancia=5000.0, altimetria=300.0, tipoTerreno=MONTE}
+;
+Pesos{Atividade{id=d1c719f8-7697-4d3b-856e-f306aa0cf6f2, nome='Braços', dataRealização=2024-07-01T10:00, duracaoMin=150, frequanciaCardiacaMedia=0.0}peso=50.0, repeticoes=15, series=4, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;
+Pesos{Atividade{id=e282b82a-0efa-4db3-84e8-7ea1c0957203, nome='LegPress', dataRealização=2024-07-01T10:00, duracaoMin=120, frequanciaCardiacaMedia=0.0}peso=60.0, repeticoes=10, series=3, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;
+Pesos{Atividade{id=2f057253-1328-499e-be30-8a65e2c12d56, nome='Costas', dataRealização=2024-07-01T10:00, duracaoMin=180, frequanciaCardiacaMedia=0.0}peso=35.0, repeticoes=10, series=5, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;
+Remo{Atividade{id=5dc0113d-0a19-4953-8f55-4f7e0aca6448, nome='Canoagem', dataRealização=2024-06-01T10:00, duracaoMin=150, frequanciaCardiacaMedia=0.0}distancia=4000.0, tipoTerreno=PISTA, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;
+Remo{Atividade{id=b6d3facf-24e4-4771-af51-02704757fd0f, nome='Canoagem', dataRealização=2024-06-15T10:00, duracaoMin=120, frequanciaCardiacaMedia=0.0}distancia=3000.0, tipoTerreno=PISTA, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;
+Remo{Atividade{id=53146658-edde-40ca-a9c8-4be9347d7f23, nome='Canoagem', dataRealização=2024-06-01T10:00, duracaoMin=180, frequanciaCardiacaMedia=0.0}distancia=5000.0, tipoTerreno=PISTA, caloriasGastas=0.0, frequanciaCardiacaMedia=0.0}
+;

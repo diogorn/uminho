@@ -1,0 +1,20 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+!Makefile
+# Unignore all dirs
+!*/
+
+# Ignore default executable
+a.out
+*.o
+*.exe
+*users*.csv
+*drivers*.csv
+*rides*.csv
+Resultados/
+
+# OS files
+.DS_Store
