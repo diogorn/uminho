@@ -1,0 +1,6 @@
+python3 -m venv pl
+source pl/bin/activate
+pip install ply
+python yacc.py --example MaiorDe3
+python yacc.py --file tests/LargestOf3.pas
+python yacc.py

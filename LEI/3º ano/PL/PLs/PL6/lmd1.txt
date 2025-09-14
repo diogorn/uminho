@@ -1,0 +1,5 @@
+(doc
+    (tit "Primeiro exemplo)
+    (subtit "Aula6: 2025-03-14")
+    "Este é o Primeiro exemplo."
+)

@@ -1,0 +1,42 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> Cinema
+Rule 1     Cinema -> [ Lista ]
+Rule 2     Lista -> Lista , Filme
+Rule 3     Lista -> Filme
+Rule 4     Titulo -> TITTLE string
+Rule 5     Ano -> YEAR num
+Rule 6     Elenco -> CAST [ ListaAtor ]
+Rule 7     ListaAtor -> ListaAtor , string
+Rule 8     ListaAtor -> string
+Rule 9     Generos -> GENRES [ ListaGeneros ]
+Rule 10    ListaGeneros -> ListaGeneros , string
+Rule 11    ListaGeneros -> string
+
+Terminals, with rules where they appear
+
+,                    : 2 7 10
+CAST                 : 6
+GENRES               : 9
+TITTLE               : 4
+YEAR                 : 5
+[                    : 1 6 9
+]                    : 1 6 9
+error                : 
+num                  : 5
+string               : 4 7 8 10 11
+
+Nonterminals, with rules where they appear
+
+Ano                  : 
+Cinema               : 0
+Elenco               : 
+Filme                : 2 3
+Generos              : 
+Lista                : 1 2
+ListaAtor            : 6 7
+ListaGeneros         : 9 10
+Titulo               : 
+

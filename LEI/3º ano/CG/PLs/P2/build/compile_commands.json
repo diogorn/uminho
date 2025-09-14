@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/diogoneto/Documents/Universidade/Arquivo/LEI/3º ano/2º Semestre/CG/PLs/P2/build",
+  "command": "/usr/bin/clang++  -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/GLUT.framework/Headers -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.7 -o CMakeFiles/class2.dir/main.cpp.o -c \"/Users/diogoneto/Documents/Universidade/Arquivo/LEI/3º ano/2º Semestre/CG/PLs/P2/main.cpp\"",
+  "file": "/Users/diogoneto/Documents/Universidade/Arquivo/LEI/3º ano/2º Semestre/CG/PLs/P2/main.cpp",
+  "output": "CMakeFiles/class2.dir/main.cpp.o"
+}
+]

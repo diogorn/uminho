@@ -1,0 +1,3 @@
+/Users/diogoneto/Documents/Universidade/Arquivo/LEI/3º ano/2º Semestre/CG/PLs/P4/build/CMakeFiles/class4.dir
+/Users/diogoneto/Documents/Universidade/Arquivo/LEI/3º ano/2º Semestre/CG/PLs/P4/build/CMakeFiles/edit_cache.dir
+/Users/diogoneto/Documents/Universidade/Arquivo/LEI/3º ano/2º Semestre/CG/PLs/P4/build/CMakeFiles/rebuild_cache.dir

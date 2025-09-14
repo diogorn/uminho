@@ -1,0 +1,168 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> Documento
+Rule 1     Documento -> PA DOC Lista PF
+Rule 2     Lista -> Elem Lista
+Rule 3     Lista -> Elem
+Rule 4     Elem -> PA TIT STRING PF
+Rule 5     Elem -> PA SUBTIT STRING PF
+Rule 6     Elem -> STRING
+
+Terminals, with rules where they appear
+
+DOC                  : 1
+PA                   : 1 4 5
+PF                   : 1 4 5
+STRING               : 4 5 6
+SUBTIT               : 5
+TIT                  : 4
+error                : 
+
+Nonterminals, with rules where they appear
+
+Documento            : 0
+Elem                 : 2 3
+Lista                : 1 2
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . Documento
+    (1) Documento -> . PA DOC Lista PF
+
+    PA              shift and go to state 2
+
+    Documento                      shift and go to state 1
+
+state 1
+
+    (0) S' -> Documento .
+
+
+
+state 2
+
+    (1) Documento -> PA . DOC Lista PF
+
+    DOC             shift and go to state 3
+
+
+state 3
+
+    (1) Documento -> PA DOC . Lista PF
+    (2) Lista -> . Elem Lista
+    (3) Lista -> . Elem
+    (4) Elem -> . PA TIT STRING PF
+    (5) Elem -> . PA SUBTIT STRING PF
+    (6) Elem -> . STRING
+
+    PA              shift and go to state 4
+    STRING          shift and go to state 7
+
+    Lista                          shift and go to state 5
+    Elem                           shift and go to state 6
+
+state 4
+
+    (4) Elem -> PA . TIT STRING PF
+    (5) Elem -> PA . SUBTIT STRING PF
+
+    TIT             shift and go to state 8
+    SUBTIT          shift and go to state 9
+
+
+state 5
+
+    (1) Documento -> PA DOC Lista . PF
+
+    PF              shift and go to state 10
+
+
+state 6
+
+    (2) Lista -> Elem . Lista
+    (3) Lista -> Elem .
+    (2) Lista -> . Elem Lista
+    (3) Lista -> . Elem
+    (4) Elem -> . PA TIT STRING PF
+    (5) Elem -> . PA SUBTIT STRING PF
+    (6) Elem -> . STRING
+
+    PF              reduce using rule 3 (Lista -> Elem .)
+    PA              shift and go to state 4
+    STRING          shift and go to state 7
+
+    Elem                           shift and go to state 6
+    Lista                          shift and go to state 11
+
+state 7
+
+    (6) Elem -> STRING .
+
+    PA              reduce using rule 6 (Elem -> STRING .)
+    STRING          reduce using rule 6 (Elem -> STRING .)
+    PF              reduce using rule 6 (Elem -> STRING .)
+
+
+state 8
+
+    (4) Elem -> PA TIT . STRING PF
+
+    STRING          shift and go to state 12
+
+
+state 9
+
+    (5) Elem -> PA SUBTIT . STRING PF
+
+    STRING          shift and go to state 13
+
+
+state 10
+
+    (1) Documento -> PA DOC Lista PF .
+
+    $end            reduce using rule 1 (Documento -> PA DOC Lista PF .)
+
+
+state 11
+
+    (2) Lista -> Elem Lista .
+
+    PF              reduce using rule 2 (Lista -> Elem Lista .)
+
+
+state 12
+
+    (4) Elem -> PA TIT STRING . PF
+
+    PF              shift and go to state 14
+
+
+state 13
+
+    (5) Elem -> PA SUBTIT STRING . PF
+
+    PF              shift and go to state 15
+
+
+state 14
+
+    (4) Elem -> PA TIT STRING PF .
+
+    PA              reduce using rule 4 (Elem -> PA TIT STRING PF .)
+    STRING          reduce using rule 4 (Elem -> PA TIT STRING PF .)
+    PF              reduce using rule 4 (Elem -> PA TIT STRING PF .)
+
+
+state 15
+
+    (5) Elem -> PA SUBTIT STRING PF .
+
+    PA              reduce using rule 5 (Elem -> PA SUBTIT STRING PF .)
+    STRING          reduce using rule 5 (Elem -> PA SUBTIT STRING PF .)
+    PF              reduce using rule 5 (Elem -> PA SUBTIT STRING PF .)
+

@@ -1,0 +1,21 @@
+Input:  abcOn123On456=789
+Output: Soma: 579
+Not printed output: 1368
+
+Input:  abcOn123On456=789==
+Output: Soma: 579
+Output: Soma: 1368
+Output: Soma: 1368
+Not printed output: 1368
+
+Input:  abcOn123Off456On789=987
+Output: Soma: 912
+Not printed output: 1899
+
+Input:  Off123On456=789
+Output: Soma: 456
+Not printed output: 1245
+
+Input:  OnOffOnOff=123
+Output: Soma: 0
+Not printed output: 0
