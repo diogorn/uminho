@@ -1,0 +1,23 @@
+
+    <camera> 
+        <free disable="True" sensitivity="1.0" noNeedClick="True" limitedAngle="False" speed="1.0"/>
+        <!--
+        Detalhes relacionados à camera de movimento livre
+
+            disable : Desligar Free Camera
+                Default : False
+
+            sensitivity : O quanto a camera gira com o movimento do rato
+                Default : 1.0f (ou definido por mim mais tarde no código)
+
+            noNeedClick : Camera gira sem precisar de pressionar o botão do rato (estilo jogos FPS)
+                Default : False
+
+            limitedAngle : Após certos angulos, a camera não gira mais
+                Default : True
+
+            speed : Velocidade da movimentação
+                Default : 1.0f (ou definido por mim mais tarde no código)
+            
+        -->
+    </camera>

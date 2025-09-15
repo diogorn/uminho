@@ -1,0 +1,50 @@
+<world> 
+    <window width="512" height="512" />
+    <camera> 
+	    <position x="10" y="20" z="10" />
+	    <lookAt x="1" y="1" z="0" />
+	    <up x="0" y="1" z="0" /> 
+        <projection fov="60" near="1" far="1000" />
+        <free disable="True" sensitivity="1.0" noNeedClick="True" limitedAngle="False" speed="1.0"/>
+    </camera>
+    <group> 
+		<group>
+			<transform>
+				<translate time = "10" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+					<point x = "0" y = "0" z = "3" />
+					<point x = "2" y = "-1" z = "0" />
+					<point x = "0" y = "0" z = "0" />
+					<point x = "-3" y = "3" z = "0" />
+				</translate>
+				<scale x="0.1" y="0.1" z="0.1" />
+			</transform>
+			<models> 
+				<model file="bezier_10.3d" /> <!-- generator patch teapot.patch 10 bezier_10.3d -->
+			</models>
+		</group>
+		<group>
+			<transform>
+				<translate x="0" y="5" z="0" />
+				<translate time = "20" align="true"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+					<point x = "0" y = "1" z = "6" />
+					<point x = "1" y = "0.6" z = "3" />
+					<point x = "6" y = "0.3" z = "0" />
+					<point x = "10" y = "0" z = "-4" />
+					<point x = "5" y = "-0.3" z = "-10" />
+				</translate>
+				<rotate time="9" x="1" y="0" z="0" />
+			</transform>
+			<models> 
+				<model file="cone_2_1_5_5.3d" /> <!-- generator patch teapot.patch 10 bezier_10.3d -->
+			</models>
+			<group>
+				<transform>
+					<rotate time="1" x="0" y="1" z="0" />
+				</transform>
+				<models> 
+					<model file="bezier_1.3d" /> <!-- generator patch teapot.patch 10 bezier_10.3d -->
+				</models>
+			</group>
+		</group>
+ 	</group>
+</world>

@@ -1,0 +1,15 @@
+<world> 
+    <window width="600" height="600" />
+    <camera> 
+	    <position x="5" y="3" z="3" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" />
+        <projection fov="60" near="1" far="7" /> 
+    </camera>
+	<group> 
+  		<models> 
+			<model file="box_2_2.3d" />
+			<model file="sphere_3_20_20.3d"/>
+ 		</models>
+ 	</group>
+</world>

@@ -1,0 +1,62 @@
+[JANELA::width] Definido! (512)
+[JANELA::height] Definido! (512)
+[CAMERA::position::x] Definido! (-0.740200)
+[CAMERA::position::y] Definido! (1.182951)
+[CAMERA::position::z] Definido! (1.376347)
+[CAMERA::lookAt::x] Definido! (0.000000)
+[CAMERA::lookAt::y] Definido! (0.000000)
+[CAMERA::lookAt::z] Definido! (0.000000)
+[CAMERA::up::x] Definido! (0.000000)
+[CAMERA::up::y] Definido! (1.000000)
+[CAMERA::up::z] Definido! (0.000000)
+[CAMERA::projection::fov] Definido! (60.000000)
+[CAMERA::projection::near] Definido! (1.000000)
+[CAMERA::projection::far] Definido! (1000.000000)
+[CAMERA::free] Não existe...
+[LUZ::POINT::position::x] Definido! (0.000000)
+[LUZ::POINT::position::y] Definido! (0.200000)
+[LUZ::POINT::position::z] Definido! (0.000000)
+[LUZ::POINT::position::x] Definido! (-2.000000)
+[LUZ::POINT::position::y] Definido! (2.000000)
+[LUZ::POINT::position::z] Definido! (2.000000)
+[GRUPOS::Nodo-1::transform] Transformação não existe...
+[GRUPOS::Nodo-1::models] Modelos não existe...
+[GRUPO::Nodo-2::groups] Inserindo novo nodo (2), cuja ultima transformação é 0 e com 0 filhos
+[GRUPO::Nodo-1::groups::filho] Adicionado filho (1)...
+[GRUPOS::Nodo-3::transform::translate_x] Definido! (-0.500000)
+[GRUPOS::Nodo-3::transform::translate_y] Definido! (0.000000)
+[GRUPOS::Nodo-3::transform::translate_z] Definido! (-0.500000)
+[GRUPOS::Nodo-3::transform::scale_x] Definido! (0.200000)
+[GRUPOS::Nodo-3::transform::scale_y] Definido! (0.200000)
+[GRUPOS::Nodo-3::transform::scale_z] Definido! (0.200000)
+[GRUPO::Nodo-3::groups] Inserindo novo nodo (3), cuja ultima transformação é 0 e com 0 filhos
+[GRUPO::Nodo-1::groups::filho] Adicionado filho (1)...
+[GRUPOS::Nodo-4::transform::translate_x] Definido! (0.500000)
+[GRUPOS::Nodo-4::transform::translate_y] Definido! (0.200000)
+[GRUPOS::Nodo-4::transform::translate_z] Definido! (0.500000)
+[GRUPOS::Nodo-4::transform::scale_x] Definido! (0.200000)
+[GRUPOS::Nodo-4::transform::scale_y] Definido! (0.200000)
+[GRUPOS::Nodo-4::transform::scale_z] Definido! (0.200000)
+[GRUPO::Nodo-4::groups] Inserindo novo nodo (4), cuja ultima transformação é 0 e com 0 filhos
+[GRUPO::Nodo-1::groups::filho] Adicionado filho (1)...
+[GRUPOS::Nodo-5::transform::translate_x] Definido! (-0.500000)
+[GRUPOS::Nodo-5::transform::translate_y] Definido! (0.000000)
+[GRUPOS::Nodo-5::transform::translate_z] Definido! (0.500000)
+[GRUPOS::Nodo-5::transform::scale_x] Definido! (0.100000)
+[GRUPOS::Nodo-5::transform::scale_y] Definido! (0.100000)
+[GRUPOS::Nodo-5::transform::scale_z] Definido! (0.100000)
+[GRUPOS::Nodo-5::transform::rotate_angulo] Definido! (-90.000000)
+[GRUPOS::Nodo-5::transform::rotate_x] Definido! (1.000000)
+[GRUPOS::Nodo-5::transform::rotate_y] Definido! (0.000000)
+[GRUPOS::Nodo-5::transform::rotate_z] Definido! (0.000000)
+[GRUPO::Nodo-5::groups] Inserindo novo nodo (5), cuja ultima transformação é 0 e com 0 filhos
+[GRUPO::Nodo-1::groups::filho] Adicionado filho (1)...
+[GRUPOS::Nodo-6::transform::scale_x] Definido! (0.200000)
+[GRUPOS::Nodo-6::transform::scale_y] Definido! (0.200000)
+[GRUPOS::Nodo-6::transform::scale_z] Definido! (0.200000)
+[GRUPOS::Nodo-6::transform::translate_x] Definido! (2.500000)
+[GRUPOS::Nodo-6::transform::translate_y] Definido! (1.000000)
+[GRUPOS::Nodo-6::transform::translate_z] Definido! (-2.500000)
+[GRUPO::Nodo-6::groups] Inserindo novo nodo (6), cuja ultima transformação é 0 e com 0 filhos
+[GRUPO::Nodo-1::groups::filho] Adicionado filho (1)...
+[GRUPO::Nodo-1::groups] Inserindo novo nodo (1), cuja ultima transformação é 0 e com 5 filhos
