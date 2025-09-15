@@ -1,0 +1,1 @@
+um teste enorme para testar o tamanho da cifra e o read do terminal 12

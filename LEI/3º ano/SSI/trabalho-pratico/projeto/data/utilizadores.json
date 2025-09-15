@@ -1,0 +1,10 @@
+{
+  "VAULT_CLI2": {
+    "id": 1,
+    "nome": "User 2 (SSI Vault Client 2)"
+  },
+  "VAULT_CLI3": {
+    "id": 2,
+    "nome": "User 3 (SSI Vault Client 3)"
+  }
+}
